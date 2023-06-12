@@ -28,6 +28,8 @@ class CustomAppBar extends StatelessWidget {
     );
   }
 
+//refactoring to write a clean code
+
   Widget _buildIcon(IconData icon) {
     return Container(
       padding: const EdgeInsets.all(8),

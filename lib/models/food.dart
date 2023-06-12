@@ -5,7 +5,7 @@ class Food {
   String waitTime;
   num score;
   String cal;
-  String price;
+  num price;
   num quantity;
   List<Map<String, String>> ingredients;
   String about;
@@ -24,7 +24,7 @@ class Food {
           '20 Mins',
           4.4,
           '248 kcal',
-          '12',
+          12,
           1,
           [
             {
@@ -42,6 +42,55 @@ class Food {
           ],
           'The only fast food you need',
           highLight: true),
+      Food(
+        'assets/images/eggs.jpg',
+        'Tasty choice',
+        'Fried Eggs',
+        '18 Mins',
+        4.1,
+        '248 kcal',
+        9,
+        4,
+        [
+          {
+            'Noodle': 'assets/images/pasta.jpg',
+          },
+          {
+            'Egg': 'assets/images/pasta.jpg',
+          },
+          {
+            'Shrimp': 'assets/images/pasta.jpg',
+          },
+          {
+            'Scallion': 'assets/images/pasta.jpg',
+          }, //Add the ingredients images
+        ],
+        'The only fast food you need',
+      ),
+      Food(
+          'assets/images/marinated_meat.jpg',
+          'High Fat',
+          'Marinated Meat',
+          '40 Mins',
+          4.6,
+          '300 kcal',
+          22,
+          1,
+          [
+            {
+              'Noodle': 'assets/images/pasta.jpg',
+            },
+            {
+              'Egg': 'assets/images/pasta.jpg',
+            },
+            {
+              'Shrimp': 'assets/images/pasta.jpg',
+            },
+            {
+              'Scallion': 'assets/images/pasta.jpg',
+            }, //Add the ingredients images
+          ],
+          'your taste your experience')
     ];
   }
 
@@ -54,7 +103,7 @@ class Food {
           '30 mins',
           4.5,
           '180 kcal',
-          '10',
+          10,
           3,
           [
             {
@@ -71,7 +120,32 @@ class Food {
             }, //Add the ingredients images
           ],
           'The only fast food you need',
-          highLight: false)
+          highLight: false),
+      Food(
+        'assets/images/sandwich.jpg',
+        'Most liked ',
+        'sandwich',
+        '25 Mins',
+        4.9,
+        '148 kcal',
+        12,
+        3,
+        [
+          {
+            'Noodle': 'assets/images/pasta.jpg',
+          },
+          {
+            'Egg': 'assets/images/pasta.jpg',
+          },
+          {
+            'Shrimp': 'assets/images/pasta.jpg',
+          },
+          {
+            'Scallion': 'assets/images/pasta.jpg',
+          }, //Add the ingredients images
+        ],
+        'The only fast food you need',
+      ),
     ];
   }
 }

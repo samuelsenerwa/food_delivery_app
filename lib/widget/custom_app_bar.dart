@@ -20,25 +20,22 @@ class CustomAppBar extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: leftCallback != null ? () => leftCallback!() : null,
-            child: Container(
-              padding: const EdgeInsets.all(8),
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
-              ),
-              child: Icon(leftIcon),
-            ),
+            child: _buildIcon(leftIcon),
           ),
-          Container(
-            padding: const EdgeInsets.all(8),
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.white,
-            ),
-            child: Icon(rightIcon),
-          )
+          _buildIcon(rightIcon)
         ],
       ),
+    );
+  }
+
+  Widget _buildIcon(IconData icon) {
+    return Container(
+      padding: const EdgeInsets.all(8),
+      decoration: const BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white,
+      ),
+      child: Icon(icon),
     );
   }
 }

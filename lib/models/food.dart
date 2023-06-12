@@ -120,7 +120,7 @@ class Food {
             }, //Add the ingredients images
           ],
           'The only fast food you need',
-          highLight: false),
+          highLight: true),
       Food(
         'assets/images/sandwich.jpg',
         'Most liked ',
@@ -128,7 +128,7 @@ class Food {
         '25 Mins',
         4.9,
         '148 kcal',
-        12,
+        7,
         3,
         [
           {

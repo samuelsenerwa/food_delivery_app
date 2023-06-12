@@ -20,6 +20,7 @@ class FoodListView extends StatelessWidget {
           onPageChanged: (index) => callback(index),
           children: category
               .map((e) => ListView.separated(
+                    padding: EdgeInsets.zero,
                     itemBuilder: (context, index) =>
                         FoodItem(restaurant.menu[category[selected]]![index]),
                     separatorBuilder: (_, index) => SizedBox(height: 15),

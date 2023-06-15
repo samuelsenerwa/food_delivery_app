@@ -5,6 +5,7 @@ import 'package:food_delivery_app/widget/custom_app_bar.dart';
 import 'package:food_delivery_app/widget/food_list_view.dart';
 import 'package:food_delivery_app/widget/food_list.dart';
 import 'package:food_delivery_app/widget/restaurant_info.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomePage extends StatefulWidget {
   @override
